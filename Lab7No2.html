@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        function cal(){
+        let number1 = document.getElementById("num1");
+        let n1 = number1.value;
+
+        let number2 = document.getElementById("num2");
+        let n2 = number2.value;
+
+        let result = document.getElementById("result");
+        let ans = result.value;
+    
+        if (ans =="+"){
+            a = parseInt(n1)+parseInt(n2)
+        }
+        if (ans =="-"){
+            a = parseInt(n1)-parseInt(n2)
+        }
+        if(ans =="*"){
+            a = parseInt(n1)*parseInt(n2)
+        }
+        if(ans =="/"){
+            a = parseInt(n1)/parseInt(n2)
+        }
+        Answer.value = a
+    }
+    </script>  
+</head>
+
+<body>
+    
+    <form action="">
+    <input type="text" id="num1" size="10">
+        <select id="result">
+          <option>+</option>
+          <option>-</option>
+          <option>*</option>
+          <option>/</option>
+        </select>
+
+    <input type="text" id="num2" size="10">
+    <label for="">=</label>
+    <input type="text" id="Answer" disabled size="10">
+    <input type="button" value='Complete' onclick="cal()">
+
+</form>
+</body>
+</html> 
